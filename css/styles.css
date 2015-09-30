@@ -18,7 +18,6 @@ body {
     color: #000000;
 }
 
-
 .red-text{
     color:#FA8B81;
 }
@@ -50,15 +49,15 @@ body {
 }
 
 .margin-plus{
-    margin-left: 15px;
+    margin-top: 25px;
 }
 
 .regular-font-13{
     font-size: 13px;
 }
 
-.regular-font-15{
-    font-size: 15px;
+.regular-font-14{
+    font-size: 14px;
 }
 
 .regular-font-17{
@@ -103,11 +102,16 @@ a:hover{
 .border-grey{
     border-radius: 0;
     border: 1px solid lightgray;
-
 }
 
-.back-icon{
+.border-top-white{
+    border-top: 2px solid #ffffff;
+}
 
+.center-pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .sort-active{
     color: #a7a9ac;
@@ -178,9 +182,15 @@ section.background-yellow .container .background-lightblue {
 .grey-border-top{
     border-top:1px solid #e5e5e5;
 }
+
 .grey-border-right{
     border-right:1px solid #e5e5e5;
 }
+
+.grey-border-left{
+    border-left:5px solid grey;
+}
+
 .no-padding-left{
     padding-left: 0;
 }
@@ -362,13 +372,17 @@ section.background-yellow .container .background-lightblue {
 }
 
 .pic-end{
-    bottom: 40px;
-    height: 60px;
-    left: 20px;
+    bottom: 30px;
 }
 
+.size-pic{
+    width: 25%;
+}
+
+
 .substats-1{
-    margin-left:15%;
+    margin-left:6%;
+    text-align: right;
 }
 
 .substats-2{
@@ -440,7 +454,7 @@ section.background-yellow .container .background-lightblue {
 .arrow-votes{
     position: absolute;
     top: 0;
-    left: 155px;
+    left: 80%;
 }
 
 .discussion-text{
@@ -451,13 +465,13 @@ section.background-yellow .container .background-lightblue {
 .arrow-votes-discussion-a{
     position: absolute;
     top: 20px;
-    left: 175px;
+    left: 75%;
 }
 
 .arrow-votes-discussion-b{
     position: absolute;
     top: 40px;
-    left: 155px;
+    left: 80%;
 }
 
 .h{
@@ -475,49 +489,224 @@ section.background-yellow .container .background-lightblue {
     margin-top: -20px;
 }
 
-.col-xs-offset-right-12 {
-    margin-right: 100%;
-}
-.col-xs-offset-right-11 {
-    margin-right: 91.66666667%;
-}
-.col-xs-offset-right-10 {
-    margin-right: 83.33333333%;
-}
-.col-xs-offset-right-9 {
-    margin-right: 75%;
-}
-.col-xs-offset-right-8 {
-    margin-right: 66.66666667%;
-}
-.col-xs-offset-right-7 {
-    margin-right: 58.33333333%;
-}
-.col-xs-offset-right-6 {
-    margin-right: 50%;
-}
-.col-xs-offset-right-5 {
-    margin-right: 41.66666667%;
-}
-.col-xs-offset-right-4 {
-    margin-right: 33.33333333%;
-}
-.col-xs-offset-right-3 {
-    margin-right: 25%;
-}
-.col-xs-offset-right-2 {
-    margin-right: 16.66666667%;
-}
-.col-xs-offset-right-1 {
-    margin-right: 8.33333333%;
-}
-.col-xs-offset-right-0 {
-    margin-right: 0;
+
+/*
+Mobile
+*/
+
+@media (max-width: 767px) {
+
+    .header-top {
+        padding-top: 20px;
+        text-align: right;
+    }
+
+    .right-column-answer {
+        position: relative;
+        min-height: 230px;
+    }
+
+    .margin-bottom-search{
+        margin-bottom: 10px;
+    }
+
+    div.col-md-2.col-xs-3.no-padding-left.padding-user{
+        padding-left: 10px;
+    }
+
+    div.column.column-grey > center > img{
+        width: 50px;
+    }
+
+    .regular-font-13 {
+        font-size: 9px;
+    }
+
+    .pleft{
+        padding-left: 15px;
+    }
+    .line-modal > div > p{
+        text-align: center;
+    }
+
+    .modal-question {
+        line-height: 95px;
+        font-size: 24px;
+    }
+
+    .modal-box-1, .modal-box-3{
+        margin-left: 8%;
+    }
+
+    .size-pic{
+        width: 75%;
+    }
+
+    .s11{
+        font-size: 11px;
+    }
+
+    .s15{
+        font-size: 15px;
+    }
+
+    .pic-end {
+        bottom: 20px;
+    }
+
+    .substats-1,.substats-2,.substats-3{
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .h-question{
+        display: block;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .padding-user{
+        padding-top: 10px;
+    }
+
+    .arrow-votes {
+        position: absolute;
+        bottom: -8px;
+        left: 100%;
+        top:inherit;
+    }
+
+    .text-votes-discussion-a{
+        height: 20px;
+        margin-right: 40px;
+        position: relative;
+    }
+
+    .arrow-votes-discussion-a {
+        position: absolute;
+        top: -20px;
+        left: 97%;
+    }
+
+    .h-discussion-a{
+        height: 110px;
+    }
+
+    .col-xs-offset-right-12 {
+        margin-right: 100%;
+    }
+
+    .col-xs-offset-right-11 {
+        margin-right: 91.66666667%;
+    }
+
+    .col-xs-offset-right-10 {
+        margin-right: 83.33333333%;
+    }
+
+    .col-xs-offset-right-9 {
+        margin-right: 75%;
+    }
+
+    .col-xs-offset-right-8 {
+        margin-right: 66.66666667%;
+    }
+
+    .col-xs-offset-right-7 {
+        margin-right: 58.33333333%;
+    }
+
+    .col-xs-offset-right-6 {
+        margin-right: 50%;
+    }
+
+    .col-xs-offset-right-5 {
+        margin-right: 41.66666667%;
+    }
+
+    .col-xs-offset-right-4 {
+        margin-right: 33.33333333%;
+    }
+
+    .col-xs-offset-right-3 {
+        margin-right: 25%;
+    }
+
+    .col-xs-offset-right-2 {
+        margin-right: 16.66666667%;
+    }
+
+    .col-xs-offset-right-1 {
+        margin-right: 8.33333333%;
+    }
+
+    .col-xs-offset-right-0 {
+        margin-right: 0;
+    }
+
 }
 /*
 Tablet
 */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .single-quest-line{
+        border-top: 2px solid white;
+        padding-top: 10px;
+    }
+
+    .margin-bottom-search{
+        margin-bottom: 10px;
+    }
+
+
+    .line-modal > div > p{
+        font-size: 9px;
+    }
+
+    .modal-box-1{
+        margin-left: 35px;
+    }
+
+    .s11{
+        font-size: 11px;
+    }
+
+    .s15{
+        font-size: 15px;
+    }
+
+    .col-sm-offset-12p{
+        margin-left: 12%;
+    }
+
+    .col-sm-offset-center{
+        margin-left: 37.666667%;
+    }
+
+    .modal-question {
+        line-height: 125px;
+        font-size: 40px;
+    }
+    .substats-1{
+        margin-left:5%;
+    }
+
+    .substats-2{
+        margin-right: 0;
+    }
+
+    .right-column-answer {
+        position: relative;
+        min-height: 210px;
+    }
+
+    .pic-end{
+        bottom: 15px;
+    }
+
     .col-sm-offset-right-12 {
         margin-right: 100%;
     }
@@ -566,6 +755,8 @@ PC
     .regular-font-13{
         font-size: 10px;
     }
+
+
 
     .col-md-offset-right-12 {
         margin-right: 100%;
