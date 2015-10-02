@@ -11,17 +11,17 @@
                             <div class="col-md-4 col-md-offset-4 col-md-offset-right-4
                            col-sm-4 col-sm-offset-4 col-sm-offset-right-4
                            col-xs-4 col-xs-offset-4 col-xs-offset-right-4">
-                                <img src="img/me.jpg" width="100" class="img-circle img-responsive center-pic">
+                                <img ng-src="app/img/{{modalData.photo}}" width="100" class="img-circle img-responsive center-pic">
                             </div>
                         </div>
                         <br>
-                        <p class="blue-text text-center regular-font regular-font-17">Dr. Halima</p>
+                        <p class="blue-text text-center regular-font regular-font-17">Dr. {{modalData.name}}</p>
                     </div>
                 </div>
                 <div class="row line-modal">
-                    <div class="col-md-4 col-sm-4 col-xs-12"><p class="regular-font  grey-text text-left">MEMBER FOR <br class="visible-xs"><span class="black-text">  5 months</span></p></div>
-                    <div class="col-md-4 col-sm-4 col-xs-12"><p class="regular-font  grey-text text-center">LAST SEEN <br class="visible-xs"><span class="black-text">  Saturday afternoon</span></p></div>
-                    <div class="col-md-4 col-sm-4 col-xs-12"><p class="regular-font  grey-text text-right">ACTIVITY LEVEL <br class="visible-xs"><span class="black-text">  <i class="fa fa-asterisk red-text"></i> <i class="fa fa-asterisk red-text"></i> <i class="fa fa-asterisk grey-text"></i></span></p></div>
+                    <div class="col-md-4 col-sm-4 col-xs-12"><p class="regular-font  grey-text text-left">MEMBER FOR <br class="visible-xs"><span class="black-text"> {{modalData.modal.member}}  months</span></p></div>
+                    <div class="col-md-4 col-sm-4 col-xs-12"><p class="regular-font  grey-text text-center">LAST SEEN <br class="visible-xs"><span class="black-text">  {{modalData.modal.lseen}}</span></p></div>
+                    <div class="col-md-4 col-sm-4 col-xs-12"><p class="regular-font  grey-text text-right">ACTIVITY LEVEL <br class="visible-xs"><span class="black-text"> <i ng-class="modalData.modal.level >0 ? 'fa fa-asterisk red-text' : 'fa fa-asterisk grey-text' "></i> <i ng-class="modalData.modal.level >1 ? 'fa fa-asterisk red-text' : 'fa fa-asterisk grey-text' "></i> <i ng-class="modalData.modal.level > 2 ? 'fa fa-asterisk red-text' : 'fa fa-asterisk grey-text' "></i></span></p></div>
                 </div>
                 <div class="row">
                     <div class="col-md-1 col-sm-2 col-xs-1 no-padding-left">
@@ -38,7 +38,7 @@
                         <i class="fa fa-chevron-circle-right fa-2x blue-text header-back visible-xs"></i>
                     </div>
                 </div>
-                <div><p class="text-center regular-font regular-font-14 grey-text">THAT'S WHERE WE HAVE BEEN THESE 5 MONTHS AGO</p></div>
+                <div><p class="text-center regular-font regular-font-14 grey-text">THAT'S WHERE WE HAVE BEEN THESE {{modalData.modal.member}} MONTHS AGO</p></div>
                 <div class="row modal-boxes">
                     <br><br>
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -46,28 +46,28 @@
                             <div class="col-md-3 col-sm-3 col-xs-6 modal-box-1">
                                 <div class="modal-box-1-content genre-font black-text">
                                     <p class="modal-box-1-number">
-                                        <b>46</b>
+                                        <b>{{modalData.modal.ppeers}}</b>
                                         peers</p>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-3 col-xs-6 modal-box-2">
                                 <div class="modal-box-2-content genre-font black-text">
                                     <p class="modal-box-2-number">
-                                        <b>29</b>
+                                        <b>{{modalData.modal.pdiscussions}}</b>
                                         discussions</p>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-3 col-xs-6 modal-box-3">
                                 <div class="modal-box-3-content genre-font black-text">
                                     <p class="modal-box-3-number">
-                                        <b>19</b>
+                                        <b>{{modalData.modal.pfindings}}</b>
                                         findings</p>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-3 col-xs-6 modal-box-4">
                                 <div class="modal-box-4-content  genre-font black-text">
                                     <p class="modal-box-4-number">
-                                        <b>10</b>
+                                        <b>{{modalData.modal.pquestions}}</b>
                                         questions</p>
                                 </div>
                             </div>
@@ -79,21 +79,21 @@
                 <div class="row">
                     <div class="col-md-2 col-md-offset-3 col-sm-3 col-sm-offset-12p col-xs-4">
                         <div class="background-pic">
-                            <img class="centered img-circle" src="img/hannibal.jpg" alt="">
+                            <img class="centered img-circle" ng-src="app/img/{{modalData.modal.usersjoined[0].photo}}" alt="">
                         </div>
-                        <p class="text-center regular-font  blue-text subname">S.E.N. Waveru</p>
+                        <p class="text-center regular-font  blue-text subname">{{modalData.modal.usersjoined[0].name}}</p>
                     </div>
                     <div class="col-md-2 col-sm-3 col-xs-4">
                         <div class="background-pic">
-                            <img class="centered img-circle" src="img/dexter.jpg" alt="">
+                            <img class="centered img-circle" ng-src="app/img/{{modalData.modal.usersjoined[1].photo}}" alt="">
                         </div>
-                        <p class="text-center regular-font  blue-text subname">Patricia</p>
+                        <p class="text-center regular-font  blue-text subname">{{modalData.modal.usersjoined[1].name}}</p>
                     </div>
                     <div class="col-md-2 col-md-offset-right-3 col-sm-3 col-xs-4">
                         <div class="background-pic">
-                            <img class="centered img-circle" src="img/bane.jpg" alt="">
+                            <img class="centered img-circle" ng-src="app/img/{{modalData.modal.usersjoined[2].photo}}" alt="">
                         </div>
-                        <p class="text-center regular-font  blue-text subname">Joseph Alouch</p>
+                        <p class="text-center regular-font  blue-text subname">{{modalData.modal.usersjoined[2].name}}</p>
                     </div>
                 </div>
                 <br><br>
@@ -105,18 +105,21 @@
             <div class="col-md-12 col-sm-12 col-xs-12 background-pic">
 
                 <div class="col-md-4 col-md-offset-4 col-md-offset-right-4 col-sm-4 col-sm-offset-4 col-sm-offset-right-4 col-xs-4 col-xs-offset-4 col-xs-offset-right-4 pic-end">
-                    <img class="img-circle center-pic size-pic" src="img/got.jpg" alt="">
+                    <img class="img-circle center-pic size-pic" ng-src="app/img/{{modalData.modal.hotUser.photo}}" alt="">
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <p class="regular-font blue-text text-center">Andrew <span class="grey-text s11">FOUND THE GUARDIAN ARTICLE</span></p>
-                    <h4 class=" text-center blue-text genre-font s15"><b>Vegan diet to stop diabetes progress</b></h4>
+                    <p class="regular-font blue-text text-center">{{modalData.modal.hotUser.name}} <span class="grey-text s11">FOUND THE GUARDIAN ARTICLE</span></p>
+                    <h4 class=" text-center blue-text genre-font s15"><b>{{modalData.modal.hotUser.article}}</b></h4>
                 </div>
                 <div class="col-md-offset-1 col-md-10 col-md-offset-right-2 col-sm-12 col-xs-12">
                     <div class="row s11">
-                        <div class="col-md-3 col-sm-3 col-xs-6 substats-1 "><p class="genre-font  black-text">6 peers involved</p></div>
-                        <div class="col-md-3 col-sm-3 col-xs-6 substats-2 "><p class="genre-font  black-text">3 related discussion</p></div>
-                        <div class="col-md-3 col-sm-3 col-xs-6  substats-3"><p class="genre-font  black-text">3 conversations</p></div>
-                        <div class="col-md-2 col-sm-3 col-xs-6 "><p class="genre-font  black-text">19 upvotes</p></div>
+                        <div class="col-md-3 col-sm-3 col-xs-6 substats-1 "><p class="genre-font  black-text">{{modalData.modal.hotUser.peers}} peers involved</p></div>
+                        <div class="col-md-3 col-sm-3 col-xs-6 substats-2 "><p class="genre-font  black-text">{{modalData.modal.hotUser.discussions}} related discussion</p></div>
+                        <div class="col-md-3 col-sm-3 col-xs-6  substats-3"><p class="genre-font  black-text">{{modalData.modal.hotUser.conversations}} conversations</p></div>
+                        <div class="col-md-2 col-sm-3 col-xs-6 ">
+                            <p class="genre-font  black-text" ng-if="modalData.modal.hotUser.votes >= 0">{{modalData.modal.hotUser.votes}} upvotes</p>
+                            <p class="genre-font  black-text" ng-if="modalData.modal.hotUser.votes < 0">{{modalData.modal.hotUser.votes*-1}} downvotes</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,476 @@
+[
+    {
+        "id":1,
+        "name" :"Eva",
+        "photo":"got.jpg",
+        "dayspublished":15,
+        "question" :{
+            "id":1,
+            "discussed":2,
+            "title":"Will insulin make my patient gain weight?",
+            "content":"All my patients with diabetes should see an opthalmologist yearly for a dialated eye eximanination- begining at diagnosis inpeople with type 2 diabetes, and after 5 years in people with type 1 diabetes after puberty. Patients with know eye disease, symptoms of blurred vision in one eye, or blind spots may need to see their opthalmologist more frequently.",
+            "votes":19,
+            "comments":[
+                {
+                    "id":3,
+                    "user":"Joseph",
+                    "photo":"dexter.jpg",
+                    "commented":"2015-10-02",
+                    "comment":"Numbers or tringling in your feet should be reported to your doctor at your regular visits.",
+                    "votes":8,
+                    "subcomments":[
+                        {
+                            "id":2,
+                            "user":"Andrew",
+                            "photo":"hannibal.jpg",
+                            "commented":"2015-10-01",
+                            "comment":"You should check your feet daily for redness, caluses, cracks or skin breakdown.",
+                            "votes":2
+                        }
+                    ]
+                },
+                {
+                    "id":1,
+                    "user":"Eva",
+                    "photo":"got.jpg",
+                    "commented":"2015-09-01",
+                    "comment":"When your blood sugar is low, your body gives out signs that you need food.",
+                    "votes":-3,
+                    "subcomments":null
+                }
+            ]
+        },
+        "nActivities":3,
+        "userscommented":[
+            {"photo":"apsycho.jpg"},
+            {"photo":"bane.jpg"},
+            {"photo":"dexter.jpg"}
+        ],
+        "userAnswered":"me.jpg",
+        "related":1,
+        "peers":6,
+        "conversations":3,
+        "modal":{
+            "member":3,
+            "lseen": "Monday night",
+            "level": 1,
+            "ppeers":1,
+            "pdiscussions":3,
+            "pfindings":50,
+            "pquestions":2,
+            "usersjoined":[
+                {
+                    "name":"John",
+                    "photo":"me.jpg"
+                },
+                {
+                    "name":"Peter",
+                    "photo":"hannibal.jpg"
+                },
+                {
+                    "name":"Pascual",
+                    "photo":"dexter.jpg"
+                }
+            ],
+            "hotUser":{
+                "name": "Axel",
+                "photo":"bane.jpg",
+                "article":"Vegan diet to stop diabetes progress",
+                "peers":2,
+                "discussions":4,
+                "conversations":5,
+                "votes":4
+            }
+        }
+    },
+
+    {
+        "id":2,
+        "name" :"Andrew",
+        "photo":"hannibal.jpg",
+        "dayspublished":5,
+        "question" :{
+            "id":2,
+            "discussed":1,
+            "title":"Vegan diet in diabetes treatment?",
+            "content":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only fiv and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            "votes":1,
+            "comments":[
+                {
+                    "id":3,
+                    "user":"Joseph",
+                    "photo":"dexter.jpg",
+                    "commented":"2015-10-02",
+                    "comment":"Numbers or tringling in your feet should be reported to your doctor at your regular visits.",
+                    "votes":8,
+                    "subcomments":[
+                        {
+                            "id":2,
+                            "user":"Andrew",
+                            "photo":"hannibal.jpg",
+                            "commented":"2015-10-01",
+                            "comment":"You should check your feet daily for redness, caluses, cracks or skin breakdown.",
+                            "votes":2
+                        },
+                        {
+                            "id":2,
+                            "user":"Andrew",
+                            "photo":"hannibal.jpg",
+                            "commented":"2015-10-01",
+                            "comment":"You should check your feet daily for redness, caluses, cracks or skin breakdown.",
+                            "votes":2
+                        },
+                        {
+                            "id":2,
+                            "user":"Andrew",
+                            "photo":"hannibal.jpg",
+                            "commented":"2015-10-01",
+                            "comment":"You should check your feet daily for redness, caluses, cracks or skin breakdown.",
+                            "votes":2
+                        }
+                    ]
+                },
+                {
+                    "id":1,
+                    "user":"Eva",
+                    "photo":"got.jpg",
+                    "commented":"2015-09-01",
+                    "comment":"When your blood sugar is low, your body gives out signs that you need food.",
+                    "votes":-3,
+                    "subcomments":null
+                }
+            ]
+        },
+        "nActivities":6,
+        "userscommented":[
+            {"photo":"dexter.jpg"},
+            {"photo":"hannibal.jpg"},
+            {"photo":"apsycho.jpg"},
+            {"photo":"bane.jpg"},
+            {"photo":"dexter.jpg"},
+            {"photo":"hannibal.jpg"}
+        ],
+        "userAnswered":"me.jpg",
+        "related":2,
+        "peers":9,
+        "conversations":5,
+        "modal":{
+            "member":5,
+            "lseen": "Saturday night",
+            "level": 3,
+            "ppeers":12,
+            "pdiscussions":2,
+            "pfindings":5,
+            "pquestions":12,
+            "usersjoined":[
+                {
+                    "name":"John",
+                    "photo":"got.jpg"
+                },
+                {
+                    "name":"Peter",
+                    "photo":"hannibal.jpg"
+                },
+                {
+                    "name":"Pascual",
+                    "photo":"dexter.jpg"
+                }
+            ],
+            "hotUser":{
+                "name": "Manuel",
+                "photo":"me.jpg",
+                "article":"Will insulin make my patient gain weight?",
+                "peers":20,
+                "discussions":3,
+                "conversations":2,
+                "votes":-4
+            }
+        }
+    },
+
+    {
+        "id":3,
+        "name" :"Joseph",
+        "photo":"dexter.jpg",
+        "dayspublished":20,
+        "question" :{
+            "id":3,
+            "discussed":18,
+            "title":"Vegan diet to stop diabetes progress",
+            "content":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only fiv and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            "votes":1,
+            "comments":null
+        },
+        "nActivities":0,
+        "userscommented":[
+            {"photo":"bane.jpg"},
+            {"photo":"hannibal.jpg"}
+        ],
+        "userAnswered":"me.jpg",
+        "related":5,
+        "peers":4,
+        "conversations":0,
+        "modal":{
+            "member":9,
+            "lseen": "Sunday night",
+            "level": 2,
+            "ppeers":12,
+            "pdiscussions":2,
+            "pfindings":5,
+            "pquestions":12,
+            "usersjoined":[
+                {
+                    "name":"John",
+                    "photo":"got.jpg"
+                },
+                {
+                    "name":"Peter",
+                    "photo":"hannibal.jpg"
+                },
+                {
+                    "name":"Pascual",
+                    "photo":"dexter.jpg"
+                }
+            ],
+            "hotUser":{
+                "name": "Manuel",
+                "photo":"me.jpg",
+                "article":"Vegan diet in diabetes treatment?",
+                "peers":2,
+                "discussions":3,
+                "conversations":24,
+                "votes":40
+            }
+        }
+    },
+
+    {
+        "id":3,
+        "name" :"Eva",
+        "photo":"got.jpg",
+        "dayspublished":15,
+        "question" :{
+            "id":3,
+            "discussed":2,
+            "title":"Will insulin make my patient gain weight?",
+            "content":"All my patients with diabetes should see an opthalmologist yearly for a dialated eye eximanination- begining at diagnosis inpeople with type 2 diabetes, and after 5 years in people with type 1 diabetes after puberty. Patients with know eye disease, symptoms of blurred vision in one eye, or blind spots may need to see their opthalmologist more frequently.",
+            "votes":19,
+            "comments":[
+                {
+                    "id":3,
+                    "user":"Joseph",
+                    "photo":"dexter.jpg",
+                    "commented":"2015-10-02",
+                    "comment":"Numbers or tringling in your feet should be reported to your doctor at your regular visits.",
+                    "votes":8,
+                    "subcomments":[
+                        {
+                            "id":2,
+                            "user":"Andrew",
+                            "photo":"hannibal.jpg",
+                            "commented":"2015-10-01",
+                            "comment":"You should check your feet daily for redness, caluses, cracks or skin breakdown.",
+                            "votes":2
+                        }
+                    ]
+                },
+                {
+                    "id":1,
+                    "user":"Eva",
+                    "photo":"got.jpg",
+                    "commented":"2015-09-01",
+                    "comment":"When your blood sugar is low, your body gives out signs that you need food.",
+                    "votes":-3,
+                    "subcomments":null
+                },
+                {
+                    "id":2,
+                    "user":"Eva",
+                    "photo":"got.jpg",
+                    "commented":"2015-09-01",
+                    "comment":"When your blood sugar is low, your body gives out signs that you need food.",
+                    "votes":-3,
+                    "subcomments":null
+                }
+            ]
+        },
+        "nActivities":3,
+        "userscommented":[
+            {"photo":"apsycho.jpg"},
+            {"photo":"bane.jpg"},
+            {"photo":"dexter.jpg"}
+        ],
+        "userAnswered":"me.jpg",
+        "related":1,
+        "peers":6,
+        "conversations":3,
+        "modal":{
+            "member":3,
+            "lseen": "Monday night",
+            "level": 1,
+            "ppeers":1,
+            "pdiscussions":3,
+            "pfindings":50,
+            "pquestions":2,
+            "usersjoined":[
+                {
+                    "name":"John",
+                    "photo":"me.jpg"
+                },
+                {
+                    "name":"Peter",
+                    "photo":"hannibal.jpg"
+                },
+                {
+                    "name":"Pascual",
+                    "photo":"dexter.jpg"
+                }
+            ],
+            "hotUser":{
+                "name": "Axel",
+                "photo":"bane.jpg",
+                "article":"Vegan diet to stop diabetes progress",
+                "peers":2,
+                "discussions":4,
+                "conversations":5,
+                "votes":4
+            }
+        }
+    },
+
+    {
+        "id":5,
+        "name" :"Andrew",
+        "photo":"hannibal.jpg",
+        "dayspublished":5,
+        "question" :{
+            "id":5,
+            "discussed":1,
+            "title":"Vegan diet in diabetes treatment?",
+            "content":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only fiv and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            "votes":1,
+            "comments":[
+                {
+                    "id":3,
+                    "user":"Joseph",
+                    "photo":"dexter.jpg",
+                    "commented":"2015-10-02",
+                    "comment":"Numbers or tringling in your feet should be reported to your doctor at your regular visits.",
+                    "votes":8,
+                    "subcomments":null
+                },
+                {
+                    "id":1,
+                    "user":"Eva",
+                    "photo":"got.jpg",
+                    "commented":"2015-09-01",
+                    "comment":"When your blood sugar is low, your body gives out signs that you need food.",
+                    "votes":-3,
+                    "subcomments":null
+                }
+            ]
+        },
+        "nActivities":6,
+        "userscommented":[
+            {"photo":"dexter.jpg"},
+            {"photo":"hannibal.jpg"},
+            {"photo":"apsycho.jpg"},
+            {"photo":"bane.jpg"},
+            {"photo":"dexter.jpg"},
+            {"photo":"hannibal.jpg"}
+        ],
+        "userAnswered":"me.jpg",
+        "related":2,
+        "peers":9,
+        "conversations":5,
+        "modal":{
+            "member":5,
+            "lseen": "Saturday night",
+            "level": 3,
+            "ppeers":12,
+            "pdiscussions":2,
+            "pfindings":5,
+            "pquestions":12,
+            "usersjoined":[
+                {
+                    "name":"John",
+                    "photo":"got.jpg"
+                },
+                {
+                    "name":"Peter",
+                    "photo":"hannibal.jpg"
+                },
+                {
+                    "name":"Pascual",
+                    "photo":"dexter.jpg"
+                }
+            ],
+            "hotUser":{
+                "name": "Manuel",
+                "photo":"me.jpg",
+                "article":"Will insulin make my patient gain weight?",
+                "peers":20,
+                "discussions":3,
+                "conversations":2,
+                "votes":-4
+            }
+        }
+    },
+
+    {
+        "id":6,
+        "name" :"Joseph",
+        "photo":"dexter.jpg",
+        "dayspublished":20,
+        "question" :{
+            "id":6,
+            "discussed":18,
+            "title":"Vegan diet to stop diabetes progress",
+            "content":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only fiv and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            "votes":1,
+            "comments":null
+        },
+        "nActivities":0,
+        "userscommented":[
+            {"photo":"bane.jpg"},
+            {"photo":"hannibal.jpg"}
+        ],
+        "userAnswered":"me.jpg",
+        "related":5,
+        "peers":4,
+        "conversations":0,
+        "modal":{
+            "member":9,
+            "lseen": "Sunday night",
+            "level": 2,
+            "ppeers":12,
+            "pdiscussions":2,
+            "pfindings":5,
+            "pquestions":12,
+            "usersjoined":[
+                {
+                    "name":"John",
+                    "photo":"got.jpg"
+                },
+                {
+                    "name":"Peter",
+                    "photo":"hannibal.jpg"
+                },
+                {
+                    "name":"Pascual",
+                    "photo":"dexter.jpg"
+                }
+            ],
+            "hotUser":{
+                "name": "Manuel",
+                "photo":"me.jpg",
+                "article":"Vegan diet in diabetes treatment?",
+                "peers":2,
+                "discussions":3,
+                "conversations":24,
+                "votes":40
+            }
+        }
+    }
+
+]

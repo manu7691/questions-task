@@ -491,6 +491,10 @@ section.background-yellow .container .background-lightblue {
 }
 
 
+.nocomments{
+    height: 120px;
+}
+
 /*
 Mobile
 */
@@ -594,6 +598,8 @@ Mobile
     .h-discussion-a{
         height: 110px;
     }
+
+
 
     .col-xs-offset-right-12 {
         margin-right: 100%;

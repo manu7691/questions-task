@@ -1,0 +1,251 @@
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-xs-1">
+                <a ng-href="#/"><i class="fa fa-chevron-circle-left fa-3x grey-text header-back"></i></a>
+            </div>
+            <div class="col-md-10 col-sm-11 col-xs-10">
+                <div class="row">
+                    <div class="col-md-2 col-sm-3 col-xs-9 col-xs-offset-1 header-logo">
+                        <h2>QUESTION</h2>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-1 header-logo margin-plus">
+                        <span class="fa fa-2x fa-plus-circle blue-text text-right"></span>
+                    </div>
+                    <div class="col-md-8 col-sm-7 hidden-xs header-top genre-font">
+                        <p>Last time discussed {{thequestion.question.discussed }} days ago</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="background-yellow">
+    <div class="container yellow-shadow-right">
+        <div class="row">
+
+            <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 background-lightgrey">
+                <div class="col-md-12 col-sm-12 col-xs-12 shadow-right">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div class="row background-lightblue padding-user-bottom">
+                                <div class="col-md-2 col-sm-2 col-xs-3 pleft  no-padding-left padding-user">
+                                    <center><img ng-src="app/img/{{thequestion.photo}}" width="60" class="img-circle img-responsive" alt="nameuser" ng-click="open(thequestion.id)"></center>
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-8 no-padding-right padding-user">
+                                    <div class="row">
+                                        <div class="col-md-10  col-sm-10 col-xs-10">
+                                            <p class="blue-text regular-font" ng-click="open(thequestion.id)">{{thequestion.name}} <span class="dark-grey-text">IS ASKING:</span></p>
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10 hidden-xs">
+                                            <p class="blue-text genre-font question"><i>{{thequestion.question.title}}</i></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row background-lightblue  visible-xs border-top-white ">
+                                <div class="col-xs-12 single-quest-line">
+                                    <p class="blue-text genre-font text-center h-question"><i>{{thequestion.question.title}}</i></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="row answer-columns h">
+                                <div class="col-md-2 col-sm-2 hidden-xs">
+                                    <div class="background-lightblue column"></div>
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-11 ">
+                                    <p class="content-text"> {{thequestion.question.content}}</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 hidden-xs">
+                            <div class="row background-lightblue h-box">
+                                <p class="regular-font blue-text text-center">unfollow</p>
+
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div class="row voting-column background-white">
+
+                                <div class="h-votes col-xs-10 col-xs-offset-1 ">
+
+                                    <p class="text-center genre-font" ng-if="thequestion.question.votes >= 0"><strong>{{thequestion.question.votes}}</strong> upvotes</p>
+                                    <p class="text-center genre-font" ng-if="thequestion.question.votes < 0"><strong>{{thequestion.question.votes*-1}}</strong> downvotes</p>
+                                    <div class="arrow-votes"><i class="fa fa-caret-up blue-text fa-2x" ng-click="thequestion.question.votes = thequestion.question.votes + 1"></i><br><i class="fa fa-caret-down blue-text fa-2x" ng-click="thequestion.question.votes = thequestion.question.votes - 1"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="visible-xs col-xs-12">
+                            <div class="row background-white h-box">
+
+                                <div class="col-xs-6">
+                                    <p class="regular-font blue-text text-left">unfollow</p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="col-xs-10 col-xs-offset-1 ">
+
+                                        <p class="text-center genre-font" ng-if="thequestion.question.votes >= 0"><strong>{{thequestion.question.votes}}</strong> upvotes</p>
+                                        <p class="text-center genre-font" ng-if="thequestion.question.votes < 0"><strong>{{thequestion.question.votes*-1}}</strong> downvotes</p>
+                                        <div class="arrow-votes"><i class="fa fa-caret-up blue-text fa-2x" ng-click="thequestion.question.votes = thequestion.question.votes + 1"></i><br><i class="fa fa-caret-down blue-text fa-2x" ng-click="thequestion.question.votes = thequestion.question.votes - 1"></i></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-10 col-sm-10 col-sm-offset-1 col-md-offset-1 col-md-offset-right-1">
+                <center>
+                    <div class="btn btn-default btn-lg btn-questions black-text  border-grey regular-font ">
+                        GIVE new answer
+                    </div>
+                </center>
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <!-- discussion -->
+        <div ng-hide="thequestion.question.comments == null"><p class="text-center genre-font black-text">{{thequestion.question.comments.length}} peers already answered {{thequestion.name}}</p></div>
+        <br>
+        <div ng-repeat="comment in thequestion.question.comments | orderBy: '-votes' : order track by $index" >
+            <div class="row" >
+
+                <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 background-lightgrey" >
+                    <div class="col-md-12 col-sm-12 shadow-top-right grey-border-top">
+
+                        <div class="row">
+                            <div class="col-md-9 col-sm-9 col-xs-12" >
+                                <div class="row background-white ">
+                                    <div class="col-md-2 col-sm-2 hidden-xs u-photo padding-user grey-border-right">
+                                        <center><img ng-src="app/img/{{comment.photo}}" width="60" class="img-circle img-responsive"  alt="nameuser" ng-click="open(comment.id)"></center>
+                                    </div>
+                                    <div class="visible-xs col-xs-3 padding-user">
+                                        <center><img ng-src="app/img/{{comment.photo}}" width="60" class="img-circle img-responsive" alt="nameuser" ng-click="open(comment.id)"></center>
+                                    </div>
+                                    <div class="col-md-10 col-sm-10 col-xs-9 no-padding-right padding-user">
+                                        <p class="blue-text regular-font" ng-click="open(comment.id)">{{comment.user}} <span class="dark-grey-text">COMMENTED IT • </span> <span class="genre-font black-text">{{comment.commented | fromNow }}</span></p>
+                                        <p class="hidden-xs"> {{comment.comment}}</p>
+                                    </div>
+                                    <div class="visible-xs col-xs-12 no-padding-right padding-user grey-border-top" ng-class="comment.subcomments == null ? 'nocomments':'' " >
+                                        <p> {{comment.comment}}</p>
+                                        <div class="row">
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <p class="text-right genre-font text-votes-discussion-a" ng-if="thequestion.question.votes >= 0"><strong>{{thequestion.question.votes}}</strong> upvotes</p>
+                                                <p class="text-right genre-font text-votes-discussion-a" ng-if="thequestion.question.votes < 0"><strong>{{thequestion.question.votes*-1}}</strong> downvotes</p>
+                                                <div class="arrow-votes-discussion-a"><i class="fa fa-caret-up blue-text fa-2x"  ng-click="thequestion.question.votes = thequestion.question.votes + 1"></i><br><i class="fa fa-caret-down blue-text fa-2x"  ng-click="thequestion.question.votes = thequestion.question.votes - 1"></i></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="clearfix"></div>
+                                <div ng-hide="comment.subcomments == null" ng-repeat="subcomment in comment.subcomments | orderBy: '-votes' : order">
+                                    <div class="row answer-columns-c h hidden-xs" >
+                                        <div class="col-md-2 col-sm-2 col-xs-2 background-lightgrey grey-border-top">
+                                            <div class=" column grey-border-right"></div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xs-2 grey-border-top grey-border-right background-white">
+                                            <div class="column h-votes">
+                                                <center><img ng-src="app/img/{{subcomment.photo}}" width="60" class="img-circle img-responsive" alt="nameuser" ng-click="open(subcomment.id)"></center>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-8 grey-border-top background-white column">
+                                            <p class=" discussion-text blue-text regular-font" ng-click="open(subcomment.id)">{{subcomment.user}} <span class="dark-grey-text">COMMENTED IT • </span> <span class="genre-font black-text">{{subcomment.commented | fromNow}}</span></p>
+                                            <p class="content-text"> {{subcomment.comment}}</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row background-white visible-xs grey-border-top grey-border-left "  >
+                                        <div class="col-xs-3 padding-user">
+                                            <center><img ng-src="app/img/{{subcomment.photo}}" width="60" class="img-circle img-responsive" alt="nameuser" ng-click="open(subcomment.id)"></center>
+                                        </div>
+                                        <div class="col-xs-9 no-padding-right padding-user" >
+                                            <p class="blue-text regular-font" ng-click="open(subcomment.id)">{{subcomment.user}}<span class="dark-grey-text">COMMENTED IT • </span> <span class="genre-font black-text">{{subcomment.commented | fromNow}}</span></p>
+                                            <p class="hidden-xs"> {{subcomment.comment}}</p>
+                                        </div>
+                                        <div class=" col-xs-12  no-padding-right padding-user grey-border-top h-discussion-a" >
+                                            <p> {{subcomment.comment}}</p>
+                                            <div class="row">
+                                                <div class="col-xs-10 col-xs-offset-1">
+                                                    <p class="text-right genre-font text-votes-discussion-a" ng-if="subcomment.votes >= 0"><strong>{{subcomment.votes}}</strong> upvotes</p>
+                                                    <p class="text-right genre-font text-votes-discussion-a"  ng-if="subcomment.votes < 0"><strong>{{subcomment.votes*-1}}</strong> downvotes</p>
+                                                    <div class="arrow-votes-discussion-a"><i class="fa fa-caret-up blue-text fa-2x"  ng-click="subcomment.votes = subcomment.votes + 1"></i><br><i class="fa fa-caret-down blue-text fa-2x"  ng-click="subcomment.votes = subcomment.votes - 1"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-3 col-sm-3 hidden-xs"  >
+                                <div class="row background-white h-box">
+                                    <p class="text-center genre-font" ng-if="comment.votes >= 0"><strong>{{comment.votes}}</strong> upvotes</p>
+                                    <p class="text-center genre-font" ng-if="comment.votes < 0"><strong>{{comment.votes*-1}}</strong> downvotes</p>
+                                    <div class="arrow-votes-discussion-a"><i class="fa fa-caret-up blue-text fa-2x"  ng-click="comment.votes = comment.votes + 1"></i><br><i class="fa fa-caret-down blue-text fa-2x"  ng-click="comment.votes = comment.votes - 1" ></i></div>
+                                </div>
+                                <div class="clearfix"></div>
+
+                                <div class="row voting-column background-white grey-border-top" ng-hide="comment.subcomments == null"  ng-repeat="subcomment in comment.subcomments | orderBy: '-votes' : order">
+
+                                    <div class="h-votes col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 " >
+                                        <br><br>
+                                        <p class="text-center genre-font" ng-if="subcomment.votes >= 0"><strong>{{subcomment.votes}}</strong> upvotes</p>
+                                        <p class="text-center genre-font" ng-if="subcomment.votes < 0"><strong>{{subcomment.votes*-1}}</strong> downvotes</p>
+                                        <div class="arrow-votes-discussion-b"><i class="fa fa-caret-up blue-text fa-2x" ng-click="subcomment.votes = subcomment.votes + 1"></i><br><i class="fa fa-caret-down blue-text fa-2x" ng-click="subcomment.votes = subcomment.votes - 1"></i></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-md-offset-right-1">
+                    <center>
+                        <div class="btn btn-default btn-lg btn-questions black-text   border-grey regular-font ">
+                            {{comment.subcomments != null ? 'CONTINUE discussion' : 'COMMENT'}}
+
+                        </div>
+                    </center>
+                </div>
+
+            </div>
+
+            <br>
+        </div>
+
+
+        <div class="clearfix"></div>
+        <br>
+        <br>
+        <div class="hidden-xs">
+            <br><br>
+            <br><br><br>
+            <br><br><br>
+            <br><br><br>
+
+        </div>
+    </div>
+    <br><br><br>
+</section>
